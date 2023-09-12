@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>...:: Formulario de login::...</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css">/
+
+</head>
+
+<body>
+    <header>
+        <h1 style="color:blue">Esta etiqueta es HEADER</h1>
+    </header>
+
+    <nav>
+        <h1> Este es el NAV</h1>
+    </nav>
+
+    <aside>
+      <!-- las opciones van al lado-->
+    </aside>
+
+    <footer> 
+        <!-- pie de pagina-->
+
+    </footer>
+
+
+
+    <form method="POST" action="xx">
+        <ol>
+            <li>
+                <label for="idusuario">Usuario:</label>
+                <input type="text" maxlength="10" name="usuario" id="idusuario" />
+            </li>
+
+            <li>
+                <label for="idclave">Clave:</label>
+                <input type="password" maxlength="10" name="clave" id="idclave" />
+            </li>
+
+            <li>
+                <label for="idcomentario">Comentario:</label>
+                <textarea row="5" cols="40" name="comentario" id="idcomentario"></textarea>
+            </li>
+
+            <li>
+                <label for="idsearch">Buscar:</label>
+                <input type="search" maxlength="20" name="buscar" id="idbuscar" />
+            </li>
+
+            <li>
+                <label for="idemail">E-mail:</label>
+                <input type="email" maxlength="10" name="email" id="idemail" />
+            </li>
+
+            <li>
+                <label for="idfecha">Fecha de algo:</label>
+                <input type="date" name="fecha" id="idfecha" />
+            </li>
+
+            <li>
+                <label for="idtelefono">Celular:</label>
+                <input type="tel" name="telefono" id="idtelefono" />
+            </li>
+
+            <li>
+                <label for="idurl">Sitio web:</label>
+                <input type="url" name="url" id="idurl" />
+            </li>
+
+            <li>
+                <label for="idnivel">Nivel o Ciclo Principal:</label>
+                <input type="text" name="nivel" id="idnivel" list="niveles" />
+                <datalist id="niveles">
+                    <option value="Estudios Generales">
+                    <option value="del 3 al 5">
+                    <option value="del 6 al 8">
+                    <option value="del 8 al 10">
+
+                </datalist>
+            </li>
+
+            <!-- Radio Buttons -->
+            <ul>
+
+                <li>
+                    <input type="checkbox" name="musica" value="Clasica">Clasica
+                </li>
+                <li>
+                    <input type="checkbox" name="musica" value="Pop" checked>Pop
+                </li>
+
+                <li>
+                    <input type="checkbox" name="musica" value="Rock" checked>Rock
+                </li>
+
+                <li>
+                    <input type="checkbox" name="musica" value="Heavy Metal">Heavy metal
+                </li>
+
+                <li>
+                    <input type="checkbox" name="musica" value="Salsa">Salsa
+                </li>
+
+            </ul>
+
+            <!-- Listas o menues de opciones ... ListBox -->
+            <p>
+                ¿Cual es tu comida favorita?
+                <select name="comidas" multiple>
+                    <option value="1">Ceviche</option>
+                    <option value="2">Lomo Saltado</option>
+                    <option value="3" selected>Pan con Chorizo</option>
+                    <option value="4">KFC</option>
+                    <option value="5">Pizza</option>
+                </select>
+            </p>
+
+
+            <p>
+                Ingresa tu archivo
+                <input type="file" name="miarchivo" size="30">
+            </p>
+
+            <p>
+                <input type="hidden" value="miclavees1234">
+            </p>
+
+            <p>
+                <input type="time" name="fecha1" id="idtime" />
+                <input type="datetime" name="fecha1" id="iddatetime" />
+                <input type="datetime-local" name="fecha1" id="iddatetime-local" />
+                <input type="month" name="fecha1" id="idmonth" />
+                <input type="week" name="fecha1" id="idweek" />
+            </p>
+
+            <p>
+                Numero de amigos
+                <input type="number" min="0" max="20" name="amigos" id="idamigos">
+            </p>
+
+            <p>
+                Nivel de sastifaccion
+                <input type="range" min="0" max="10" name="nrango" id="idrango">
+            </p>
+
+            <p>
+                Colores
+                <input type="color" name="ncolor" id="idcolor">
+            </p>
+
+        </ol>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpiar" />
+        <input type="button" value="Mi boton" />
+        <button>Otro boton</button>
+
+    </form>
+</body>
+
+</html>

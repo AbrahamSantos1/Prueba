@@ -1,0 +1,19 @@
+
+body {
+    font-family: Arial;
+    color: blue;
+    font-size: 100%;
+}
+
+
+h1 {
+    color: red; 
+    font-size: 5em;
+    font-weight: lighter;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid green;
+}
+
+p {
+    border: 2px do rgb(68, 42, 198);
+}
